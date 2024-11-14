@@ -1,0 +1,11 @@
+@import "react-toastify/dist/ReactToastify.min.css";
+
+@media (min-width: 1000) {
+    body {
+        overflow: hidden;
+    }
+
+
+}
+
+@media (max-width: 1000) {}

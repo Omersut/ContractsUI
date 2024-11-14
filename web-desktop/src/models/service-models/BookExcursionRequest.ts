@@ -1,0 +1,21 @@
+export type mdlBookExcursionRequest = {
+    excursionOfferId: string;
+    excursionName: string;
+    excursionVariation: string;
+    leadName: string;
+    price: number;
+    camPrice: number;
+    currency: string;
+    supplierWallet: string;
+    travelAgentWallet: string;
+    tourGuideWallet: string;
+    startDate: string;
+    supplierCAMShare: number;
+    travelAgentCAMShare: number;
+    tourGuideCAMShare: number;
+    supplierMail: string;
+    agentMail: string;
+    tourGuideMail: string;
+    nationality: string;
+    paxCount: number;
+};

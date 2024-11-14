@@ -1,0 +1,13 @@
+.slick-dots.slick-dots-bottom {
+    display: none !important;
+}
+
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 1050) {
+    body {
+        overflow: scroll;
+    }
+}

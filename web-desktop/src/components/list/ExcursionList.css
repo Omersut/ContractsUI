@@ -1,0 +1,108 @@
+.excursion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.excursion-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    flex-direction: row;
+    /* Default to row layout for larger screens */
+}
+
+.excursion-image {
+    width: 150px;
+    height: 150px !important;
+    height: auto;
+    object-fit: cover;
+}
+
+.excursion-details {
+    flex: 1;
+    padding: 16px;
+}
+
+.excursion-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.excursion-location,
+.excursion-duration,
+.excursion-themes {
+    margin: 4px 0;
+    color: #666;
+}
+
+.excursion-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px;
+    border-left: 1px solid #ddd;
+    text-align: right;
+    cursor: pointer;
+}
+
+.excursion-price span {
+    font-size: 0.9em;
+}
+
+.excursion-price strong {
+    font-size: 1.2em;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .excursion-list {
+        padding: 8px;
+        /* Reduce padding for mobile */
+    }
+
+    .excursion-card {
+        flex-direction: column;
+        /* Stack cards vertically */
+    }
+
+    .excursion-image {
+        width: 100%;
+        /* Make image responsive */
+        height: auto;
+    }
+
+    .excursion-price {
+        border-left: none;
+        /* Remove border on mobile */
+        padding: 8px;
+        /* Reduce padding */
+    }
+
+    .excursion-name {
+        font-size: 1.1em;
+        /* Slightly smaller font size for mobile */
+    }
+
+    .excursion-location,
+    .excursion-duration,
+    .excursion-themes {
+        font-size: 0.9em;
+        /* Adjust text size for mobile */
+    }
+
+    .excursion-price span {
+        font-size: 0.8em;
+        /* Smaller text size for mobile */
+    }
+
+    .excursion-price strong {
+        font-size: 1em;
+        /* Smaller font size */
+    }
+}
