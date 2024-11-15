@@ -13,7 +13,7 @@ import { GetResponse } from "../utils/ApiClient";
 import { mdlCollectManualPaymentRequest } from "../models/service-models/CollectManulaPaymentRequest";
 import { mdlCollectManualPaymentResponse } from "../models/service-models/CollectManulaPaymentResponse";
 
-const useMock = false;
+const useMock = true;
 
 module ContractsService {
     export async function SearchExcursion(
